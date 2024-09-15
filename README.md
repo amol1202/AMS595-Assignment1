@@ -4,11 +4,11 @@ This repository contains a MATLAB program that estimates the value of π using t
 
 ## Methodology
 
-The Monte Carlo method estimates π by generating random points \((x, y)\) in a unit square \([0, 1] \times [0, 1]\) and determining how many fall inside a quarter circle of radius 1. The area of the quarter circle is \(\frac{\pi}{4}\), so the probability of a random point falling inside the circle is proportional to this area. The ratio of points inside the circle to the total number of points gives an estimate of \(\frac{\pi}{4}\), and multiplying this ratio by 4 gives an estimate of π.
+The Monte Carlo method estimates π by generating random points (x, y) in a unit square ([0, 1] × [0, 1]) and determining how many fall inside a quarter circle of radius 1. The area of the quarter circle is π/4, so the probability of a random point falling inside the circle is proportional to this area. The ratio of points inside the circle to the total number of points gives an estimate of π/4, and multiplying this ratio by 4 gives an estimate of π.
 
 ### Key Steps in the Code:
-1. **Generate Random Points**: Random \(x\) and \(y\) coordinates are generated in the unit square.
-2. **Check Circle Condition**: The points that satisfy \(x^2 + y^2 \leq 1\) are counted as lying within the quarter circle.
+1. **Generate Random Points**: Random (x) and (y) coordinates are generated in the unit square.
+2. **Check Circle Condition**: The points that satisfy (x^2 + y^2 <= 1) are counted as lying within the quarter circle.
 3. **Estimate π**: The ratio of points inside the quarter circle to the total number of points is multiplied by 4 to estimate π.
 4. **Execution Time**: The program tracks the execution time for different numbers of points.
 5. **Plot Results**: The results are plotted to show how the estimation of π improves with more points and to analyze the trade-off between precision and computational cost.
