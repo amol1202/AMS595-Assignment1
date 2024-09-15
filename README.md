@@ -40,6 +40,13 @@ The adaptive precision program uses a `while` loop to estimate π to a specified
    - Dynamically adjust the number of points based on the precision target.
    - Record the number of points, iterations, and final deviation.
 
+4. Run the MATLAB function `estimate_pi_to_precision.m` with a GIF filename (for simulation). In the MATLAB command window:
+```matlab
+pi_value = estimate_pi_to_precision(1e-3, 'monte_carlo_simulation.gif');
+```
+   - Computes π to the specified precision.
+   - Creates and saves an animated GIF showing the simulation process. 
+
 ## Results
 
 ### 1. Fixed-Point Estimation of π
@@ -66,6 +73,10 @@ This plot highlights the trade-off between precision and computational cost. Whi
 This plot shows the estimated value of π as the number of points increases to achieve the desired precision.
 
 ![π Estimation Precision](./pi_estimation_precision_plot.png)
+
+### 6. Graphical Display
+This is a simulation of the random points as they are generated.
+`![Monte Carlo Simulation](./monte_carlo_simulation.gif)`
 
 ## Conclusion
 The Monte Carlo method offers a simple and effective way to estimate the value of π. The fixed-point method provides a general estimation with increasing accuracy as more points are used. The adaptive precision method refines the estimation based on the desired precision level without relying on the true value of π, showing how the number of points and iterations affect precision and computational cost.
