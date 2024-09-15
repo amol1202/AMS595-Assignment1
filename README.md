@@ -76,7 +76,7 @@ This plot shows the estimated value of π as the number of points increases to a
 
 ### 6. Graphical Display
 This is a simulation of the random points as they are generated.
-`![Monte Carlo Simulation](./monte_carlo_simulation.gif)`
+![Monte Carlo Simulation](./monte_carlo_simulation.gif)
 
 ## Conclusion
 The Monte Carlo method offers a simple and effective way to estimate the value of π. The fixed-point method provides a general estimation with increasing accuracy as more points are used. The adaptive precision method refines the estimation based on the desired precision level without relying on the true value of π, showing how the number of points and iterations affect precision and computational cost.
