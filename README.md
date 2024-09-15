@@ -52,31 +52,31 @@ pi_value = estimate_pi_to_precision(1e-3, 'monte_carlo_simulation.gif');
 ### 1. Fixed-Point Estimation of π
 This plot shows the estimated value of π as the number of random points increases. The horizontal red line represents the true value of π. As the number of points increases, the estimate converges towards the true value.
 
-![π Estimation](./Results File/pi_estimation_plot.png)
+![π Estimation](./Result_Files/pi_estimation_plot.png)
 
 ### 2. Deviation of Estimated π from True Value
 The deviation from the true value of π decreases as the number of points increases. The plot shows that using more points improves the accuracy of the estimation.
 
-![π Deviation](./Results File/pi_deviation_plot.png)
+![π Deviation](./Result_Files/pi_deviation_plot.png)
 
 ### 3. Execution Time versus Number of Points
 As the number of random points increases, the computational cost also increases. This plot shows the execution time as a function of the number of points.
 
-![Execution Time](./Results File/execution_time_plot.png)
+![Execution Time](./Result_Files/execution_time_plot.png)
 
 ### 4. Precision versus Computational Cost
 This plot highlights the trade-off between precision and computational cost. While more points provide better accuracy, they also require more computation time.
 
-![Precision vs Cost](./Results File/precision_vs_cost_plot.png)
+![Precision vs Cost](./Result_Files/precision_vs_cost_plot.png)
 
 ### 5. Adaptive Precision Estimation
 This plot shows the estimated value of π as the number of points increases to achieve the desired precision.
 
-![π Estimation Precision](./Results File/pi_estimation_precision_plot.png)
+![π Estimation Precision](./Result_Files/pi_estimation_precision_plot.png)
 
 ### 6. Graphical Display
 This is a simulation of the random points as they are generated.
-![Monte Carlo Simulation](./Results File/monte_carlo_simulation.gif)
+![Monte Carlo Simulation](./Result_Files/monte_carlo_simulation.gif)
 
 ## Conclusion
 The Monte Carlo method offers a simple and effective way to estimate the value of π. The fixed-point method provides a general estimation with increasing accuracy as more points are used. The adaptive precision method refines the estimation based on the desired precision level without relying on the true value of π, showing how the number of points and iterations affect precision and computational cost.
