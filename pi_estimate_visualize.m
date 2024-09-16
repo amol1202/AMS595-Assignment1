@@ -1,9 +1,9 @@
-function pi_estimate = estimate_pi_to_precision(target_precision, gif_filename)
-% ESTIMATE_PI_TO_PRECISION Estimates π to a specified precision using Monte Carlo method
-%   target_precision: Desired precision level (e.g., 1e-3 for 3 significant figures)
-%   gif_filename: Name of the GIF file to save (e.g., 'monte_carlo_simulation.gif')
+% AMS 595 - Assignment 1
 
-    % Check if the target precision is positive
+function pi_estimate = pi_estimate_visualize(target_precision, gif_filename)
+    % Since, the user will provide the input values,
+    % I have put a check to make sure input precision is +ve. 
+
     if target_precision <= 0
         error('Target precision must be a positive value.');
     end
